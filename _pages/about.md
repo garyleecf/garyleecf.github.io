@@ -3,6 +3,6 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hello, I'm Gary. As a human being, there are certain limitations to what I can do. For example, with the finite time and resources I have, it will take a while before the content on this webpage is up to date. Here is an initial attempt at writing a brief bio about me.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+As an innovation adventurer, I embark on a journey through the realms of deep learning, signal processing, and wireless communication. I am driven by a passionate pursuit of new solutions to time-honored engineering problems. I revel in the thrilling process of pushing boundaries and unraveling the mysteries of the scientific landscape. Join me as we venture together into the frontiers of knowledge and unlock the potential of cutting-edge technologies.
