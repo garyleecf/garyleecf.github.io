@@ -13,12 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: Gary Lee
 email: garyleecf[at]gmail[dot]com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to my webpage, where I showcase my works and share updates on my technical, scientific, and engineering endeavors. Stay tuned for updates and new content!
 twitter_username: garyleecf
 github_username: garyleecf
 minimal_mistakes_skin: dark #default
@@ -60,7 +58,7 @@ plugins:
 author:
   name   : "Gary Lee"
   avatar : "/assets/images/PersonalHeadshot.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "I am a innovation adventure (researcher) specializing in deep learning, signal processing, and wireless communication, with a passion for exploring new solutions to old long-standing problems."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
