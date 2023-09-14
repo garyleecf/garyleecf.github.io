@@ -56,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Gary Lee"
+  name   : "Gary C.F. Lee"
   avatar : "/assets/images/PersonalHeadshot.jpg"
-  bio    : "I am an innovation adventure (researcher) specializing in deep learning, signal processing, and wireless communication, with a passion for exploring new solutions to old long-standing problems."
+  bio    : "I am an adventuring innovator (AI researcher) specializing in deep learning, signal processing, and wireless communication, with a passion for exploring new solutions to old long-standing problems."
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
