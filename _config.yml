@@ -61,10 +61,10 @@ author:
   bio    : "I am an adventuring innovator (AI researcher) specializing in deep learning, signal processing, and wireless communication, with a passion for exploring new solutions to old long-standing problems."
   links:
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=-k6WQI0AAAAJ&hl=en"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/garyleecf/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -75,14 +75,14 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/reallyfun_engineer/"
-
+# icon: "fas fa-fw fa-link"
 footer:
   links:
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=-k6WQI0AAAAJ&hl=en"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/garyleecf/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
