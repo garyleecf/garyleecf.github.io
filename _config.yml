@@ -64,7 +64,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://scholar.google.com/citations?user=-k6WQI0AAAAJ&hl=en"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin"
+      icon: "fas fa-fw fa-linkedin-square"
       url: "https://www.linkedin.com/in/garyleecf/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
