@@ -113,6 +113,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _research
+  - scope:
+      path: "_research"
+      type: research
+    values:
+      layout: single
+      author_profile: true
 
 category_archive:
   type: liquid
