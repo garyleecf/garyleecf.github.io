@@ -13,6 +13,15 @@ As an adventuring innovator (AI), I embark on a journey through the realms of de
 <!--- [CV](/files/cv.pdf). --->
 
 ---
+# Research Highlights
+---
+<div class="grid__wrapper">
+{% for post in site.categories.Research limit:3 %}  
+    {% include archive-single.html type="grid" %}
+{% endfor %}
+</div>
+
+---
 # News
 ---
 <div class="grid__wrapper">
