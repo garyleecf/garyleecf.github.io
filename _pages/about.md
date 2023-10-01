@@ -15,18 +15,21 @@ As an adventuring innovator (AI), I embark on a journey through the realms of de
 ---
 # Research Highlights
 ---
+<div class="page__content ">
 <div class="grid__wrapper">
-{% for post in site.categories.Research limit:3 %}  
-    {% include archive-single.html type="grid" %}
+{% for post in site.research limit:4 %}  
+    {% include archive-single-truncated.html type="grid" truncate=100 %}
 {% endfor %}
+</div>
 </div>
 
 ---
 # News
 ---
+<div class="page__content ">
 <div class="grid__wrapper">
 {% for post in site.categories.Blog limit:12 %}  
     {% include archive-single.html type="grid" %}
 {% endfor %}
 </div>
-
+</div>

@@ -1,14 +1,17 @@
 ---
 title: "Cooperation through Limited Communication"
-categories:
-  - Research
 tags:
   - wireless communications
   - artificial intelligence
   - coding theory
+order: 2
+header:
+  teaser: "assets/images/research/cooperation_and_communication.png"
 ---
 
 (Based on MIT UROP/ELO offered in Fall 2021)
+
+![cooperation_and_communication]({{ "/assets/images/research/cooperation_and_communication.png" | relative_url }})
 
 <!-- In this project, students will develop learning algorithms for distributed, cooperative multi-agent environments through inductive puzzles and games. In such settings, communication and coordination pose unique challenges, since the optimal course of action of one agent would also depend on the state and actions of others. In particular, we will be studying this problem using the game of Hanabi, and well-known “hat puzzles”. 
 

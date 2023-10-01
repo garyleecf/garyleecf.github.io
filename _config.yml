@@ -31,7 +31,13 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Singapore # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+collections:
+  research:
+    output: true
+    permalink: /:collection/:path/
+
 include:
+  - _layouts
   - _pages
 
 # Exclude from processing.
@@ -113,13 +119,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _research
+  # _portfolio
   - scope:
-      path: "_research"
+      path: ""
       type: research
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      share: true
 
 category_archive:
   type: liquid
