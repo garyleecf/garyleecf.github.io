@@ -38,8 +38,11 @@ $right-sidebar-width-wide: 380px !default;
 .site-title{
     font-family: "Allura";
     font-size: 60px; 
+    // color: Chartreuse !important;
 }
-$site-title-color: blue;
+// .masthead__menu-item{
+//     font-family: "Helvetica";
+// }
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

@@ -21,6 +21,8 @@ twitter_username: rfunengineer
 github_username: garyleecf
 minimal_mistakes_skin: dark #default
 search: true
+# masthead_title: "..."
+# logo: "/assets/favicon/favicon-32x32.png"
 
 # Build settings
 markdown: kramdown
@@ -66,9 +68,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Gary Lee"
-  avatar : "/assets/images/PersonalHeadshot.jpg"
-  bio    : "I am an adventuring innovator (AI researcher) specializing in deep learning, signal processing, and wireless communication, with a passion for exploring new solutions to old long-standing problems."
+  name    : "Gary Lee"
+  avatar  : "/assets/images/PersonalHeadshot.jpg"
+  bio     : "I am an adventuring innovator (AI researcher) specializing in deep learning, signal processing, and wireless communication, with a passion for exploring new solutions to old long-standing problems."
+  location: "Singapore, Singapore"
   links:
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google"
@@ -129,15 +132,17 @@ defaults:
       type: research
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
+      comments: true
   - scope:
       path: ""
       type: sideprojects
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
+      comments: true
 
 category_archive:
   type: liquid
@@ -145,3 +150,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+comments:
+  provider: "facebook"
+  facebook:
+    num_posts: 5 # 5 (default)
+    colorscheme: "dark" # "light" (default), "dark"
