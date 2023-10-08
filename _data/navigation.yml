@@ -3,6 +3,8 @@ main:
     url: /research/
   - title: "Posts"
     url: /posts/
+  # - title: "Side Projects"
+  #   url: /sideprojects/
   - title: "Categories"
     url: /categories/
   - title: "Tags"

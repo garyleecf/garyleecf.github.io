@@ -1,7 +1,6 @@
 ---
-title: "Cooperation through Limited Communication"
+title: "Playing Codenames"
 tags:
-  - wireless communications
   - artificial intelligence
   - coding theory
 order: 2

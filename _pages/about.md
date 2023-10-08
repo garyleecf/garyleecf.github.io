@@ -4,6 +4,7 @@ title: "About"
 redirect_from:
   - /about/
   - /about.html
+classes: wide
 ---
 
 Hello, I'm Gary. As a human being, there are certain limitations to what I can do. For example, with the finite time and resources I have, it will take a while before the content on this webpage is up to date. Here is an initial attempt at writing a brief bio about me.
