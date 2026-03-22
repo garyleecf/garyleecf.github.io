@@ -21,6 +21,8 @@ Education
   * Thesis: "[Machine Learning for Data-Driven Signal Separation and Interference Mitigation in Radio-Frequency Communication Systems](https://dspace.mit.edu/handle/1721.1/152733)"
   * Advisor: Prof. Gregory W. Wornell
 * M.S. in Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Jun 2019
+  * Thesis: "[Robust Direction-of-Arrival Estimation in the Presence of Faulty Elements in a Uniform Linear Antenna Array](https://dspace.mit.edu/handle/1721.1/122545)"
+  * Advisor: Prof. Gregory W. Wornell
 * B.S. in Electrical Engineering, Stanford University, Jun 2016
 
 Work experience

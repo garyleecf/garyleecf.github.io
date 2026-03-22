@@ -9,4 +9,8 @@ venue: 'ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and 
 citation: "G. C. Lee, A. Weiss, A. Lancho, Y. Polyanskiy, and G. W. Wornell, “On neural architectures for deep learning-based source separation of co-channel OFDM signals,” in ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2023, pp. 1–5."
 ---
 
+\[[arXiv](https://arxiv.org/abs/2303.06438)\] \[[Code](https://github.com/RFChallenge/SCSS_OFDMArchitecture)\]
+
+<!-- ![](https://arxiv.org/html/2303.06438/x1.png) -->
+
 We study the single-channel source separation problem involving orthogonal frequency-division multiplexing (OFDM) signals, which are ubiquitous in many modern-day digital communication systems. Related efforts have been pursued in monaural source separation, where state-of-the-art neural architectures have been adopted to train an end-to-end separator for audio signals (as 1-dimensional time series). In this work, through a prototype problem based on the OFDM source model, we assess—and question—the efficacy of using audio-oriented neural architectures in separating signals based on features pertinent to communication waveforms. Perhaps surprisingly, we demonstrate that in some configurations, where perfect separation is theoretically attainable, these audio-oriented neural architectures perform poorly in separating co-channel OFDM waveforms. Yet, we propose critical domain-informed modifications to the network parameterization, based on insights from OFDM structures, that can confer about 30 dB improvement in performance.
