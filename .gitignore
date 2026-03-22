@@ -22,3 +22,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local draft notes — not for version control
+_notes/
