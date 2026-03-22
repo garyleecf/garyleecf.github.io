@@ -7,11 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I'm Gary. As a human being, there are certain limitations to what I can do. For example, with the finite time and resources I have, it will take a while before the content on this webpage is up to date. Here is an initial attempt at writing a brief bio about me.
+I'm Gary, a Research Scientist at A*STAR Institute for Infocomm Research (I²R) in Singapore. My work focuses on integrating AI and learning-based methods into the wireless stack, spanning RF signal processing and robust transceiver design to system-level resource optimization and network orchestration. I am particularly interested in settings where conventional models struggle: dynamic channels, hardware and deployment constraints, multi-agent coordination, and heterogeneous networks (e.g., TN/NTN integration).
 
-My work focuses on integrating AI + learning-based and data-driven methods into the wireless stack, from RF signal processing and robust transceiver design to system-level resource optimization and network orchestration. I am interested in settings where conventional models struggle: dynamic channels, hardware and deployment constraints, multi-agent coordination, and heterogeneous networks (e.g., TN/NTN integration). 
-
-A recurring theme is turning measurements and domain structure into reliable and actionable control policies, e.g., for beam management, resource allocation, and network resilience. Here, I will share research efforts, technical notes and reflections of what I am building and learning.
+A recurring theme in my research is turning measurements and domain structure into reliable, actionable control policies — for beam management, resource allocation, and network resilience.
 
 <!--- [CV](/files/cv.pdf). --->
 
@@ -29,19 +27,14 @@ A recurring theme is turning measurements and domain structure into reliable and
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
+<!-- News section hidden until posts are available
 ---
 # News
 ---
-<!-- <div class="page__content ">
-<div class="grid__wrapper">
-{% for post in site.categories.Blog limit:12 %}  
-    {% include archive-single.html type="grid" %}
-{% endfor %}
-</div>
-</div> -->
   <ul>{% for post in site.posts limit:12 %}
     {% include archive-single.html  %}
   {% endfor %}</ul>
+-->
 
 <!-- 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!

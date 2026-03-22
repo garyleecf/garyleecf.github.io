@@ -9,10 +9,18 @@ redirect_from:
 
 {% include base_path %}
 
+Research Interests
+======
+Machine learning and signal processing for wireless communications, with emphasis on data-driven methods that incorporate domain structure and physical constraints. Specific interests include: RF signal separation and interference mitigation; robust transceiver and receiver design under dynamic channels and hardware constraints; beam management and resource allocation for 5G/6G systems; multi-agent coordination in heterogeneous networks (terrestrial/non-terrestrial); and goal-oriented, age-aware communication for networked control and decision-making.
+
+<!--- [CV](/files/cv.pdf) --->
+
 Education
 ======
-* Ph.D in Electrical Engineering & Computer Science, Massachusets Institute of Technology, Aug 2023
-* M.S. in Electrical Engineering & Computer Science, Massachusets Institute of Technology, Jun 2019
+* Ph.D. in Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Aug 2023
+  * Thesis: "[Machine Learning for Data-Driven Signal Separation and Interference Mitigation in Radio-Frequency Communication Systems](https://dspace.mit.edu/handle/1721.1/152733)"
+  * Advisor: Prof. Gregory W. Wornell
+* M.S. in Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Jun 2019
 * B.S. in Electrical Engineering, Stanford University, Jun 2016
 
 Work experience
@@ -64,8 +72,10 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
   
-Service and leadership
+Service and Leadership
 ======
-* Organizing committee member for IEEE 6G Summit Singapore (2024, 2025), IEEE PIMRC 2026; TPC Co-Chair for IEEE VTS APWCS 2025
-* IEEE VTS Singapore Chapter Vice-Chair (2026)
+* Organizing Committee, IEEE 6G Summit Singapore (2024, 2025)
+* Organizing Committee, IEEE PIMRC 2026
+* TPC Co-Chair, IEEE VTS APWCS 2025
+* Vice-Chair, IEEE VTS Singapore Chapter (2026)
 
