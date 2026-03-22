@@ -57,7 +57,7 @@ The ITU released the IMT-2030 framework — the official vision for 6G — in 20
 But the more interesting part of IMT-2030 is not the bigger numbers. It is the three entirely new usage scenarios that have no direct equivalent in 5G.
 
 <figure style="margin: 1.8em 0 1.4em;">
-  <img src="/images/imt2030-wheel.svg" alt="IMT-2030 6G usage scenario wheel diagram" style="max-width: 100%;"/>
+  <img src="/images/imt2030-official.png" alt="ITU-R IMT-2030 framework diagram showing the six usage scenarios for 6G" style="max-width: 100%;"/>
   <figcaption style="text-align: center; font-size: 0.82em; color: #7A6858; margin-top: 0.5em;">The six usage scenarios defined in the ITU-R IMT-2030 framework. Three evolve from 5G's service classes; three are additions that define what makes 6G genuinely new.</figcaption>
 </figure>
 
