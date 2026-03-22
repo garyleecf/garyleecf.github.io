@@ -5,7 +5,7 @@
       .node-title  { font: 500 12.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #B5541F; }
       .node-sub    { font: 500 12.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #B5541F; }
       .center-title{ font: 600 15px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #ffffff; }
-      .center-sub  { font: 400 11px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #F0D8B0; }
+      .center-sub  { font: 600 15px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #ffffff; }
     </style>
   </defs>
 
@@ -40,8 +40,8 @@
   <rect x="296" y="60" width="288" height="80" rx="14" fill="#B5541F"/>
   <!-- subtle inner highlight -->
   <rect x="296" y="60" width="288" height="36" rx="14" fill="#C86030" opacity="0.35"/>
-  <text x="440" y="94"  text-anchor="middle" class="center-title">AI for Wireless</text>
-  <text x="440" y="113" text-anchor="middle" class="center-sub">Communications</text>
+  <text x="440" y="92"  text-anchor="middle" class="center-title">AI for Wireless</text>
+  <text x="440" y="111" text-anchor="middle" class="center-sub">Communications</text>
 
   <!-- ══ CONNECTOR LINES — centre to right ══ -->
   <path d="M 584 82  Q 612 57  640 57"  fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
