@@ -1,64 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170">
-  <rect width="220" height="170" fill="#f4f9fb" rx="12"/>
-  <text x="110" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#9aacb3">AGE OF INFORMATION</text>
+  <rect width="220" height="170" fill="#F9F2E8" rx="12"/>
+  <text x="110" y="20" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#A89070">AGE OF INFORMATION</text>
 
   <!-- Graph area -->
-  <rect x="18" y="26" width="184" height="96" rx="7" fill="white" stroke="#d4e9f0" stroke-width="1"/>
+  <rect x="18" y="26" width="184" height="96" rx="7" fill="white" stroke="#CDBDA0" stroke-width="1"/>
 
   <!-- Axes -->
-  <line x1="36" y1="108" x2="36" y2="34" stroke="#d4e9f0" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="36" y1="108" x2="194" y2="108" stroke="#d4e9f0" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Axis arrows -->
-  <polygon points="33,36 36,28 39,36" fill="#d4e9f0"/>
-  <polygon points="191,105 199,108 191,111" fill="#d4e9f0"/>
+  <line x1="36" y1="108" x2="36" y2="34" stroke="#CDBDA0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="36" y1="108" x2="194" y2="108" stroke="#CDBDA0" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="33,36 36,28 39,36" fill="#CDBDA0"/>
+  <polygon points="191,105 199,108 191,111" fill="#CDBDA0"/>
 
   <!-- Axis labels -->
-  <text x="116" y="120" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#9aacb3">time t</text>
-  <!-- Rotated y-axis label -->
-  <text x="14" y="78" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#9aacb3" transform="rotate(-90,14,78)">age Δ(t)</text>
+  <text x="116" y="120" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="8" fill="#A89070">time t</text>
+  <text x="14" y="78" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="8" fill="#A89070" transform="rotate(-90,14,78)">age Δ(t)</text>
 
   <!-- AoI sawtooth curve -->
-  <!-- Ramp 1: rise then drop -->
-  <path d="M 42 100 L 72 58" stroke="#2f7f93" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M 72 58 L 72 100" stroke="#2f7f93" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.55"/>
-  <!-- Ramp 2 -->
-  <path d="M 72 100 L 110 46" stroke="#2f7f93" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M 110 46 L 110 100" stroke="#2f7f93" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.55"/>
-  <!-- Ramp 3 (shorter interval = fresher) -->
-  <path d="M 110 100 L 138 70" stroke="#2f7f93" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M 138 70 L 138 100" stroke="#2f7f93" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.55"/>
-  <!-- Ramp 4 -->
-  <path d="M 138 100 L 176 54" stroke="#2f7f93" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M 176 54 L 176 100" stroke="#2f7f93" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.55"/>
-  <!-- Continuation -->
-  <path d="M 176 100 L 192 84" stroke="#2f7f93" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 42 100 L 72 58" stroke="#B5541F" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 72 58 L 72 100" stroke="#B5541F" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.5"/>
+  <path d="M 72 100 L 110 46" stroke="#B5541F" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 110 46 L 110 100" stroke="#B5541F" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.5"/>
+  <path d="M 110 100 L 138 70" stroke="#B5541F" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 138 70 L 138 100" stroke="#B5541F" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.5"/>
+  <path d="M 138 100 L 176 54" stroke="#B5541F" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 176 54 L 176 100" stroke="#B5541F" stroke-width="1.5" stroke-dasharray="3,2.5" opacity="0.5"/>
+  <path d="M 176 100 L 192 84" stroke="#B5541F" stroke-width="2.2" stroke-linecap="round" opacity="0.45"/>
 
-  <!-- Update markers (blue dots on x-axis) -->
-  <circle cx="72" cy="100" r="3.5" fill="#52adc8"/>
-  <circle cx="110" cy="100" r="3.5" fill="#52adc8"/>
-  <circle cx="138" cy="100" r="3.5" fill="#52adc8"/>
-  <circle cx="176" cy="100" r="3.5" fill="#52adc8"/>
+  <!-- Update markers -->
+  <circle cx="72"  cy="100" r="3.5" fill="#D4874A"/>
+  <circle cx="110" cy="100" r="3.5" fill="#D4874A"/>
+  <circle cx="138" cy="100" r="3.5" fill="#D4874A"/>
+  <circle cx="176" cy="100" r="3.5" fill="#D4874A"/>
 
   <!-- Legend -->
-  <circle cx="140" cy="38" r="3" fill="#52adc8"/>
-  <text x="147" y="42" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#52adc8">status update</text>
+  <circle cx="140" cy="38" r="3" fill="#D4874A"/>
+  <text x="147" y="42" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="7.5" fill="#D4874A">status update</text>
 
-  <!-- Source → Dest icons below graph -->
-  <!-- Source (transmitter) -->
-  <rect x="30" y="132" width="28" height="16" rx="3" fill="#2f7f93" opacity="0.15" stroke="#2f7f93" stroke-width="1"/>
-  <line x1="44" y1="132" x2="44" y2="126" stroke="#2f7f93" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M 47 127 Q 51 124 51 130 Q 51 136 47 133" fill="none" stroke="#52adc8" stroke-width="1.2"/>
-  <text x="44" y="144" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#9aacb3">source</text>
+  <!-- Source → Dest strip -->
+  <!-- Source box -->
+  <rect x="28" y="132" width="28" height="16" rx="3" fill="#F9F2E8" stroke="#B5541F" stroke-width="1"/>
+  <line x1="42" y1="132" x2="42" y2="126" stroke="#B5541F" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 45 127 Q 49 124 49 130 Q 49 136 45 133" fill="none" stroke="#D4874A" stroke-width="1.2"/>
+  <text x="42" y="144" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="7.5" fill="#A89070">source</text>
 
-  <!-- Arrow -->
-  <path d="M 63 140 L 95 140" stroke="#d4e9f0" stroke-width="1.5"/>
-  <polygon points="93,137 98,140 93,143" fill="#d4e9f0"/>
+  <!-- Dashed channel -->
+  <path d="M 59 140 L 93 140" stroke="#CDBDA0" stroke-width="1.4" stroke-dasharray="3,2"/>
+  <polygon points="91,137 97,140 91,143" fill="#CDBDA0"/>
 
-  <!-- Receiver/monitor -->
-  <rect x="100" y="132" width="28" height="16" rx="3" fill="#52adc8" opacity="0.15" stroke="#52adc8" stroke-width="1"/>
-  <text x="26" y="130" font-family="sans-serif" font-size="8" fill="#52adc8">📡</text>
-  <text x="114" y="144" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#9aacb3">monitor</text>
+  <!-- Monitor box -->
+  <rect x="98" y="132" width="28" height="16" rx="3" fill="#F9F2E8" stroke="#D4874A" stroke-width="1"/>
+  <text x="112" y="144" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="7.5" fill="#A89070">monitor</text>
 
   <!-- Caption -->
-  <text x="110" y="162" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#2f7f93">Freshness &amp; Goal-Oriented Comms</text>
+  <text x="110" y="162" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#B5541F">Freshness &amp; Goal-Oriented Comms</text>
 </svg>

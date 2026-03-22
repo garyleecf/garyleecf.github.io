@@ -1,57 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170">
-  <rect width="220" height="170" fill="#f4f9fb" rx="12"/>
-  <text x="110" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#9aacb3">5G / 6G SYSTEMS</text>
+  <rect width="220" height="170" fill="#F9F2E8" rx="12"/>
+  <text x="110" y="20" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#A89070">5G / 6G SYSTEMS</text>
 
   <!-- Ground line -->
-  <line x1="14" y1="122" x2="206" y2="122" stroke="#d4e9f0" stroke-width="1.5"/>
+  <line x1="14" y1="122" x2="206" y2="122" stroke="#CDBDA0" stroke-width="1.5"/>
 
   <!-- Base station tower -->
-  <!-- Tower pole -->
-  <line x1="84" y1="122" x2="84" y2="50" stroke="#2f7f93" stroke-width="3" stroke-linecap="round"/>
-  <!-- Cross-arms -->
-  <line x1="68" y1="68" x2="100" y2="68" stroke="#2f7f93" stroke-width="2" stroke-linecap="round"/>
-  <line x1="72" y1="79" x2="96" y2="79" stroke="#2f7f93" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Antenna panel head -->
-  <rect x="78" y="44" width="12" height="10" rx="2" fill="#2f7f93"/>
+  <line x1="84" y1="122" x2="84" y2="50" stroke="#B5541F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="68" y1="68" x2="100" y2="68" stroke="#B5541F" stroke-width="2" stroke-linecap="round"/>
+  <line x1="72" y1="79" x2="96" y2="79" stroke="#B5541F" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="78" y="44" width="12" height="10" rx="2" fill="#B5541F"/>
 
-  <!-- Beamforming beams (wedge shapes) -->
-  <!-- Beam 1: wide left to UE -->
-  <path d="M 84 65 L 36 112 L 46 118 Z" fill="#a8d5e5" opacity="0.35"/>
-  <line x1="84" y1="65" x2="36" y2="112" stroke="#52adc8" stroke-width="1" opacity="0.65"/>
-  <!-- Beam 2: center-right to UE2 -->
-  <path d="M 84 65 L 148 100 L 143 108 Z" fill="#a8d5e5" opacity="0.30"/>
-  <line x1="84" y1="65" x2="148" y2="100" stroke="#52adc8" stroke-width="1" opacity="0.55"/>
-  <!-- Beam 3: far right narrow -->
-  <path d="M 84 65 L 182 82 L 180 90 Z" fill="#a8d5e5" opacity="0.22"/>
-  <line x1="84" y1="65" x2="182" y2="82" stroke="#52adc8" stroke-width="1" opacity="0.45"/>
+  <!-- Beamforming beams -->
+  <!-- Beam 1: left to UE -->
+  <path d="M 84 65 L 36 112 L 46 118 Z" fill="#E8C080" opacity="0.4"/>
+  <line x1="84" y1="65" x2="36" y2="112" stroke="#D4874A" stroke-width="1" opacity="0.7"/>
+  <!-- Beam 2: center-right -->
+  <path d="M 84 65 L 148 100 L 143 108 Z" fill="#E8C080" opacity="0.3"/>
+  <line x1="84" y1="65" x2="148" y2="100" stroke="#D4874A" stroke-width="1" opacity="0.6"/>
+  <!-- Beam 3: far right -->
+  <path d="M 84 65 L 182 82 L 180 90 Z" fill="#E8C080" opacity="0.22"/>
+  <line x1="84" y1="65" x2="182" y2="82" stroke="#D4874A" stroke-width="1" opacity="0.5"/>
 
-  <!-- UE device (smartphone) at beam 1 endpoint -->
-  <rect x="32" y="106" width="16" height="24" rx="3" fill="white" stroke="#52adc8" stroke-width="1.4"/>
-  <line x1="37" y1="109" x2="43" y2="109" stroke="#d4e9f0" stroke-width="1"/>
-  <rect x="35" y="113" width="10" height="12" rx="1" fill="#f0f8fb"/>
+  <!-- UE device 1 -->
+  <rect x="32" y="106" width="16" height="24" rx="3" fill="white" stroke="#D4874A" stroke-width="1.4"/>
+  <line x1="37" y1="109" x2="43" y2="109" stroke="#CDBDA0" stroke-width="1"/>
+  <rect x="35" y="113" width="10" height="12" rx="1" fill="#F9F2E8"/>
 
-  <!-- UE device 2 at beam 2 endpoint -->
-  <rect x="140" y="100" width="14" height="22" rx="3" fill="white" stroke="#52adc8" stroke-width="1.4"/>
-  <rect x="143" y="105" width="8" height="10" rx="1" fill="#f0f8fb"/>
+  <!-- UE device 2 -->
+  <rect x="140" y="100" width="14" height="22" rx="3" fill="white" stroke="#D4874A" stroke-width="1.4"/>
+  <rect x="143" y="105" width="8" height="10" rx="1" fill="#F9F2E8"/>
 
   <!-- Satellite (top-right) -->
   <!-- Solar panels -->
-  <rect x="154" y="36" width="14" height="6" rx="1" fill="#52adc8"/>
-  <rect x="182" y="36" width="14" height="6" rx="1" fill="#52adc8"/>
+  <rect x="154" y="36" width="14" height="6" rx="1" fill="#D4874A"/>
+  <rect x="182" y="36" width="14" height="6" rx="1" fill="#D4874A"/>
   <line x1="158" y1="36" x2="158" y2="42" stroke="white" stroke-width="0.7"/>
   <line x1="162" y1="36" x2="162" y2="42" stroke="white" stroke-width="0.7"/>
   <line x1="186" y1="36" x2="186" y2="42" stroke="white" stroke-width="0.7"/>
   <line x1="190" y1="36" x2="190" y2="42" stroke="white" stroke-width="0.7"/>
   <!-- Body -->
-  <rect x="168" y="32" width="18" height="14" rx="3" fill="#2f7f93"/>
+  <rect x="168" y="32" width="18" height="14" rx="3" fill="#B5541F"/>
   <!-- Dish -->
-  <path d="M 174 46 Q 182 51 176 57" fill="none" stroke="#2f7f93" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 174 46 Q 182 51 176 57" fill="none" stroke="#B5541F" stroke-width="1.5" stroke-linecap="round"/>
 
-  <!-- NTN link: satellite to tower -->
-  <path d="M 174 50 Q 148 76 100 82" fill="none" stroke="#52adc8" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.65"/>
-  <text x="147" y="60" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#52adc8" text-anchor="middle">NTN</text>
+  <!-- NTN link dashed arc -->
+  <path d="M 174 50 Q 148 76 100 82" fill="none" stroke="#D4874A" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.65"/>
+  <text x="147" y="60" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="7.5" fill="#D4874A" text-anchor="middle">NTN</text>
 
   <!-- Caption -->
-  <text x="110" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#2f7f93">Next-Gen Cellular Networks</text>
-  <text x="110" y="156" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#7a8288">beamforming, massive MIMO, NTN</text>
+  <text x="110" y="140" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#B5541F">Next-Gen Cellular Networks</text>
+  <text x="110" y="156" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="9" fill="#7A6858">beamforming, massive MIMO, NTN</text>
 </svg>

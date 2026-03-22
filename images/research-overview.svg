@@ -1,86 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" role="img" aria-label="Research overview diagram">
   <defs>
     <style>
-      .label-sm { font: 600 10px/1 '-apple-system','Segoe UI',Arial,sans-serif; letter-spacing: 0.08em; fill: #9aacb3; }
-      .node-title { font: 500 12.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #2f7f93; }
-      .node-sub   { font: 400 10.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #7a8288; }
-      .center-title { font: 600 15px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #ffffff; }
-      .center-sub   { font: 400 11px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #a8d5e5; }
+      .label-sm    { font: 600 10px/1 '-apple-system','Segoe UI',Arial,sans-serif; letter-spacing: 0.08em; fill: #A89070; }
+      .node-title  { font: 500 12.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #B5541F; }
+      .node-sub    { font: 400 10.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #7A6858; }
+      .center-title{ font: 600 15px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #ffffff; }
+      .center-sub  { font: 400 11px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #F0D8B0; }
     </style>
   </defs>
 
-  <!-- ── page background ──────────────────────────────────────────── -->
+  <!-- page background -->
   <rect width="880" height="200" fill="#ffffff" rx="0"/>
 
-  <!-- ══════════════════════════════════════════════════════════════════
-       LEFT PANEL — Methods
-  ════════════════════════════════════════════════════════════════════ -->
-  <rect x="8" y="8" width="246" height="184" rx="10" fill="#f4f9fb" stroke="#d4e9f0" stroke-width="1"/>
+  <!-- ══ LEFT PANEL — Methods ══ -->
+  <rect x="8" y="8" width="246" height="184" rx="10" fill="#F9F2E8" stroke="#CDBDA0" stroke-width="1"/>
   <text x="131" y="28" text-anchor="middle" class="label-sm">METHODS</text>
 
   <!-- node 1 -->
-  <rect x="22" y="38" width="218" height="38" rx="6" fill="#ffffff" stroke="#52adc8" stroke-width="1.2"/>
+  <rect x="22" y="38" width="218" height="38" rx="6" fill="#ffffff" stroke="#D4874A" stroke-width="1.2"/>
   <text x="131" y="54" text-anchor="middle" class="node-title">Signal Separation</text>
   <text x="131" y="68" text-anchor="middle" class="node-sub">&#x26; Interference Mitigation</text>
 
   <!-- node 2 -->
-  <rect x="22" y="86" width="218" height="38" rx="6" fill="#ffffff" stroke="#52adc8" stroke-width="1.2"/>
+  <rect x="22" y="86" width="218" height="38" rx="6" fill="#ffffff" stroke="#D4874A" stroke-width="1.2"/>
   <text x="131" y="102" text-anchor="middle" class="node-title">Score-based &#x26; Generative</text>
   <text x="131" y="116" text-anchor="middle" class="node-sub">Models for RF Signals</text>
 
   <!-- node 3 -->
-  <rect x="22" y="134" width="218" height="38" rx="6" fill="#ffffff" stroke="#52adc8" stroke-width="1.2"/>
+  <rect x="22" y="134" width="218" height="38" rx="6" fill="#ffffff" stroke="#D4874A" stroke-width="1.2"/>
   <text x="131" y="150" text-anchor="middle" class="node-title">Reinforcement Learning</text>
   <text x="131" y="164" text-anchor="middle" class="node-sub">&#x26; Optimisation</text>
 
-  <!-- ══════════════════════════════════════════════════════════════════
-       CONNECTOR LINES — left to centre (curved)
-  ════════════════════════════════════════════════════════════════════ -->
-  <!-- node 1 → centre top-left -->
-  <path d="M 240 57 Q 272 57 300 82" fill="none" stroke="#b8d9e8" stroke-width="1.4"/>
-  <!-- node 2 → centre mid-left -->
-  <path d="M 240 105 Q 272 105 300 100" fill="none" stroke="#b8d9e8" stroke-width="1.4"/>
-  <!-- node 3 → centre bottom-left -->
-  <path d="M 240 153 Q 272 153 300 118" fill="none" stroke="#b8d9e8" stroke-width="1.4"/>
+  <!-- ══ CONNECTOR LINES — left to centre ══ -->
+  <path d="M 240 57 Q 272 57 300 82"  fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
+  <path d="M 240 105 Q 272 105 300 100" fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
+  <path d="M 240 153 Q 272 153 300 118" fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
 
-  <!-- ══════════════════════════════════════════════════════════════════
-       CENTRE NODE
-  ════════════════════════════════════════════════════════════════════ -->
-  <rect x="296" y="60" width="288" height="80" rx="14" fill="#2f7f93"/>
+  <!-- ══ CENTRE NODE ══ -->
+  <rect x="296" y="60" width="288" height="80" rx="14" fill="#B5541F"/>
   <!-- subtle inner highlight -->
-  <rect x="296" y="60" width="288" height="36" rx="14" fill="#357f91" opacity="0.35"/>
-  <text x="440" y="94" text-anchor="middle" class="center-title">AI for Wireless</text>
+  <rect x="296" y="60" width="288" height="36" rx="14" fill="#C86030" opacity="0.35"/>
+  <text x="440" y="94"  text-anchor="middle" class="center-title">AI for Wireless</text>
   <text x="440" y="113" text-anchor="middle" class="center-sub">Communications</text>
 
-  <!-- ══════════════════════════════════════════════════════════════════
-       CONNECTOR LINES — centre to right (curved)
-  ════════════════════════════════════════════════════════════════════ -->
-  <!-- centre top-right → node 1 -->
-  <path d="M 584 82 Q 612 57 640 57" fill="none" stroke="#b8d9e8" stroke-width="1.4"/>
-  <!-- centre mid-right → node 2 -->
-  <path d="M 584 100 Q 612 105 640 105" fill="none" stroke="#b8d9e8" stroke-width="1.4"/>
-  <!-- centre bottom-right → node 3 -->
-  <path d="M 584 118 Q 612 153 640 153" fill="none" stroke="#b8d9e8" stroke-width="1.4"/>
+  <!-- ══ CONNECTOR LINES — centre to right ══ -->
+  <path d="M 584 82  Q 612 57  640 57"  fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
+  <path d="M 584 100 Q 612 105 640 105" fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
+  <path d="M 584 118 Q 612 153 640 153" fill="none" stroke="#CDBDA0" stroke-width="1.4"/>
 
-  <!-- ══════════════════════════════════════════════════════════════════
-       RIGHT PANEL — Domains
-  ════════════════════════════════════════════════════════════════════ -->
-  <rect x="626" y="8" width="246" height="184" rx="10" fill="#f4f9fb" stroke="#d4e9f0" stroke-width="1"/>
+  <!-- ══ RIGHT PANEL — Domains ══ -->
+  <rect x="626" y="8" width="246" height="184" rx="10" fill="#F9F2E8" stroke="#CDBDA0" stroke-width="1"/>
   <text x="749" y="28" text-anchor="middle" class="label-sm">DOMAINS</text>
 
   <!-- node 1 -->
-  <rect x="640" y="38" width="218" height="38" rx="6" fill="#ffffff" stroke="#52adc8" stroke-width="1.2"/>
+  <rect x="640" y="38" width="218" height="38" rx="6" fill="#ffffff" stroke="#D4874A" stroke-width="1.2"/>
   <text x="749" y="54" text-anchor="middle" class="node-title">5G / 6G Systems</text>
   <text x="749" y="68" text-anchor="middle" class="node-sub">Beamforming &#x26; NTN</text>
 
   <!-- node 2 -->
-  <rect x="640" y="86" width="218" height="38" rx="6" fill="#ffffff" stroke="#52adc8" stroke-width="1.2"/>
+  <rect x="640" y="86" width="218" height="38" rx="6" fill="#ffffff" stroke="#D4874A" stroke-width="1.2"/>
   <text x="749" y="102" text-anchor="middle" class="node-title">Age of Information</text>
   <text x="749" y="116" text-anchor="middle" class="node-sub">&#x26; Goal-Oriented Comms</text>
 
   <!-- node 3 -->
-  <rect x="640" y="134" width="218" height="38" rx="6" fill="#ffffff" stroke="#52adc8" stroke-width="1.2"/>
+  <rect x="640" y="134" width="218" height="38" rx="6" fill="#ffffff" stroke="#D4874A" stroke-width="1.2"/>
   <text x="749" y="150" text-anchor="middle" class="node-title">Edge, UAV</text>
   <text x="749" y="164" text-anchor="middle" class="node-sub">&#x26; Maritime Networks</text>
-
 </svg>

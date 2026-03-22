@@ -1,66 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170">
-  <rect width="220" height="170" fill="#f4f9fb" rx="12"/>
-  <text x="110" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#9aacb3">EDGE · UAV · MARITIME</text>
+  <rect width="220" height="170" fill="#F9F2E8" rx="12"/>
+  <text x="110" y="20" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="0.09em" fill="#A89070">EDGE · UAV · MARITIME</text>
 
-  <!-- Sky area -->
-  <rect x="10" y="26" width="200" height="72" rx="7" fill="#f0f8fb"/>
-  <!-- Sea area -->
-  <rect x="10" y="96" width="200" height="48" rx="7" fill="#e8f5fa"/>
-  <!-- Horizon line -->
-  <line x1="10" y1="97" x2="210" y2="97" stroke="#d4e9f0" stroke-width="1"/>
-  <!-- Water wave lines -->
+  <!-- Sky area: warm amber-tinted -->
+  <rect x="10" y="26" width="200" height="72" rx="7" fill="#FDF5E8"/>
+  <!-- Sea area: warm dusty blue -->
+  <rect x="10" y="96" width="200" height="48" rx="7" fill="#F5EBD8"/>
+  <!-- Horizon -->
+  <line x1="10" y1="97" x2="210" y2="97" stroke="#CDBDA0" stroke-width="1"/>
+  <!-- Wave lines (warm-toned) -->
   <path d="M 10 106 Q 30 101 52 106 Q 74 111 96 106 Q 118 101 140 106 Q 162 111 184 106 Q 200 102 210 106"
-        fill="none" stroke="#a8d5e5" stroke-width="1.5"/>
+        fill="none" stroke="#D4B888" stroke-width="1.5"/>
   <path d="M 10 116 Q 32 111 54 116 Q 76 121 98 116 Q 120 111 142 116 Q 164 121 186 116 Q 200 113 210 116"
-        fill="none" stroke="#b8d9e8" stroke-width="1" opacity="0.7"/>
+        fill="none" stroke="#CDBDA0" stroke-width="1" opacity="0.7"/>
 
-  <!-- UAV / Drone (top centre) -->
+  <!-- UAV / Drone -->
   <!-- Body -->
-  <rect x="95" y="38" width="30" height="18" rx="5" fill="#2f7f93"/>
+  <rect x="95" y="38" width="30" height="18" rx="5" fill="#B5541F"/>
   <!-- Arms -->
-  <line x1="95" y1="43" x2="74" y2="43" stroke="#2f7f93" stroke-width="3" stroke-linecap="round"/>
-  <line x1="125" y1="43" x2="146" y2="43" stroke="#2f7f93" stroke-width="3" stroke-linecap="round"/>
-  <line x1="95" y1="51" x2="74" y2="51" stroke="#2f7f93" stroke-width="3" stroke-linecap="round"/>
-  <line x1="125" y1="51" x2="146" y2="51" stroke="#2f7f93" stroke-width="3" stroke-linecap="round"/>
-  <!-- Rotors (spinning disks) -->
-  <ellipse cx="74" cy="43" rx="10" ry="3" fill="#52adc8" opacity="0.65"/>
-  <ellipse cx="146" cy="43" rx="10" ry="3" fill="#52adc8" opacity="0.65"/>
-  <ellipse cx="74" cy="51" rx="10" ry="3" fill="#52adc8" opacity="0.65"/>
-  <ellipse cx="146" cy="51" rx="10" ry="3" fill="#52adc8" opacity="0.65"/>
+  <line x1="95" y1="43" x2="74" y2="43" stroke="#B5541F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="125" y1="43" x2="146" y2="43" stroke="#B5541F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="95" y1="51" x2="74" y2="51" stroke="#B5541F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="125" y1="51" x2="146" y2="51" stroke="#B5541F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Rotors -->
+  <ellipse cx="74"  cy="43" rx="10" ry="3" fill="#D4874A" opacity="0.65"/>
+  <ellipse cx="146" cy="43" rx="10" ry="3" fill="#D4874A" opacity="0.65"/>
+  <ellipse cx="74"  cy="51" rx="10" ry="3" fill="#D4874A" opacity="0.65"/>
+  <ellipse cx="146" cy="51" rx="10" ry="3" fill="#D4874A" opacity="0.65"/>
   <!-- Camera payload -->
-  <circle cx="110" cy="60" r="4" fill="#1e5a6b"/>
-  <circle cx="110" cy="60" r="2" fill="#2f7f93"/>
+  <circle cx="110" cy="60" r="4" fill="#7A3418"/>
+  <circle cx="110" cy="60" r="2" fill="#B5541F"/>
 
   <!-- Edge server (bottom-left) -->
-  <rect x="18" y="102" width="38" height="34" rx="4" fill="white" stroke="#52adc8" stroke-width="1.4"/>
-  <!-- Server rack lines -->
-  <rect x="22" y="106" width="30" height="5" rx="1" fill="#f4f9fb" stroke="#d4e9f0" stroke-width="0.6"/>
-  <rect x="22" y="114" width="30" height="5" rx="1" fill="#f4f9fb" stroke="#d4e9f0" stroke-width="0.6"/>
-  <rect x="22" y="122" width="30" height="5" rx="1" fill="#f4f9fb" stroke="#d4e9f0" stroke-width="0.6"/>
+  <rect x="18" y="102" width="38" height="34" rx="4" fill="white" stroke="#D4874A" stroke-width="1.4"/>
+  <rect x="22" y="106" width="30" height="5" rx="1" fill="#F9F2E8" stroke="#CDBDA0" stroke-width="0.6"/>
+  <rect x="22" y="114" width="30" height="5" rx="1" fill="#F9F2E8" stroke="#CDBDA0" stroke-width="0.6"/>
+  <rect x="22" y="122" width="30" height="5" rx="1" fill="#F9F2E8" stroke="#CDBDA0" stroke-width="0.6"/>
   <!-- LED dots -->
-  <circle cx="46" cy="108.5" r="2" fill="#52adc8"/>
-  <circle cx="46" cy="116.5" r="2" fill="#52adc8" opacity="0.45"/>
-  <circle cx="46" cy="124.5" r="2" fill="#52adc8" opacity="0.3"/>
-  <text x="37" y="142" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#9aacb3">edge</text>
+  <circle cx="46" cy="108.5" r="2" fill="#D4874A"/>
+  <circle cx="46" cy="116.5" r="2" fill="#D4874A" opacity="0.45"/>
+  <circle cx="46" cy="124.5" r="2" fill="#D4874A" opacity="0.3"/>
+  <text x="37" y="142" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="7.5" fill="#A89070">edge</text>
 
   <!-- Ship (bottom-right) -->
   <!-- Hull -->
-  <path d="M 110 110 L 195 110 L 190 132 L 115 132 Z" fill="white" stroke="#52adc8" stroke-width="1.4"/>
-  <!-- Superstructure / cabin -->
-  <rect x="130" y="100" width="40" height="12" rx="2" fill="#d4e9f0" stroke="#52adc8" stroke-width="1"/>
+  <path d="M 110 110 L 195 110 L 190 132 L 115 132 Z" fill="white" stroke="#D4874A" stroke-width="1.4"/>
+  <!-- Superstructure -->
+  <rect x="130" y="100" width="40" height="12" rx="2" fill="#F0D8B0" stroke="#D4874A" stroke-width="1"/>
   <!-- Mast -->
-  <line x1="144" y1="100" x2="144" y2="90" stroke="#2f7f93" stroke-width="2" stroke-linecap="round"/>
+  <line x1="144" y1="100" x2="144" y2="90" stroke="#B5541F" stroke-width="2" stroke-linecap="round"/>
   <!-- Radar arm -->
-  <line x1="144" y1="92" x2="154" y2="92" stroke="#2f7f93" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="156" cy="92" r="2" fill="#52adc8"/>
-  <text x="152" y="142" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7.5" fill="#9aacb3">maritime</text>
+  <line x1="144" y1="92" x2="154" y2="92" stroke="#B5541F" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="156" cy="92" r="2" fill="#D4874A"/>
+  <text x="152" y="142" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="7.5" fill="#A89070">maritime</text>
 
   <!-- Dashed connection lines -->
-  <!-- UAV → Edge -->
-  <path d="M 93 56 Q 68 74 36 98" fill="none" stroke="#52adc8" stroke-width="1.3" stroke-dasharray="4,3" opacity="0.7"/>
-  <!-- UAV → Ship -->
-  <path d="M 126 58 Q 150 78 150 98" fill="none" stroke="#52adc8" stroke-width="1.3" stroke-dasharray="4,3" opacity="0.7"/>
+  <path d="M 93 56 Q 68 74 36 98" fill="none" stroke="#D4874A" stroke-width="1.3" stroke-dasharray="4,3" opacity="0.7"/>
+  <path d="M 126 58 Q 150 78 150 98" fill="none" stroke="#D4874A" stroke-width="1.3" stroke-dasharray="4,3" opacity="0.7"/>
 
   <!-- Caption -->
-  <text x="110" y="157" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#2f7f93">Heterogeneous Networks</text>
+  <text x="110" y="157" text-anchor="middle" font-family="'-apple-system','Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#B5541F">Heterogeneous Networks</text>
 </svg>
