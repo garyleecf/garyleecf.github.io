@@ -3,7 +3,7 @@
     <style>
       .label-sm    { font: 600 10px/1 '-apple-system','Segoe UI',Arial,sans-serif; letter-spacing: 0.08em; fill: #A89070; }
       .node-title  { font: 500 12.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #B5541F; }
-      .node-sub    { font: 400 10.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #7A6858; }
+      .node-sub    { font: 500 12.5px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #B5541F; }
       .center-title{ font: 600 15px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #ffffff; }
       .center-sub  { font: 400 11px/1 '-apple-system','Segoe UI',Arial,sans-serif; fill: #F0D8B0; }
     </style>
