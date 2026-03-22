@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Your 4G Works Fine. So What Is 5G Actually For?"
-date: 2026-04-06
+date: 2026-03-22
 categories:
   - 5G
   - 6G
@@ -15,8 +15,6 @@ tags:
 excerpt: "Most people think 5G means faster downloads. It does — but that's the least interesting part. The deeper story is about what 'faster' even means, and why three very different answers lead to three very different engineering problems."
 author_profile: true
 ---
-
-<!-- Week 01 of 52 — See _notes/week-01-what-is-wireless.md -->
 
 If you have 4G LTE and a decent Wi-Fi router at home, your internet probably feels fine. Videos load instantly, calls are clear, pages snap open. So when someone says 5G is revolutionary, or that 6G is already being designed, a reasonable response is: *why?* What problem is actually being solved here?
 
