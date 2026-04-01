@@ -11,7 +11,7 @@ tags:
   - eMBB
   - URLLC
   - mMTC
-excerpt: "Most people think 5G means faster downloads. It does---but that's the least interesting part. The deeper story is about what 'faster' even means, and why three different answers lead to three different engineering problems."
+excerpt: "Most people think 5G means faster downloads. It does---but is that all? The deeper story is about what 'faster' even means, and why three different answers lead to three different engineering problems."
 author_profile: true
 ---
 
