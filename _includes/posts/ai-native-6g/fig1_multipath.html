@@ -1,0 +1,77 @@
+<style>
+  .fig-wrap { padding: 8px 0 4px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .fig-caption { font-size: 12px; color: var(--color-text-secondary); text-align: center; line-height: 1.5; max-width: 420px; }
+  .fig-num { font-size: 11px; color: var(--color-text-tertiary); letter-spacing: 0.06em; }
+</style>
+
+<div class="fig-wrap">
+<svg width="480" height="240" viewBox="0 0 480 240" style="max-width:100%">
+
+  <!-- Grid background: faint -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20,0 L0,0 L0,20" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="240" fill="url(#grid)"/>
+
+  <!-- Buildings: top row -->
+  <rect x="100" y="20" width="60" height="55" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+  <rect x="190" y="10" width="50" height="65" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+  <rect x="310" y="20" width="70" height="50" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+  <rect x="410" y="15" width="55" height="60" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+
+  <!-- Buildings: bottom row -->
+  <rect x="90"  y="160" width="55" height="65" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+  <rect x="200" y="170" width="65" height="55" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+  <rect x="320" y="155" width="50" height="70" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+  <rect x="405" y="165" width="60" height="60" rx="2" fill="var(--color-background-secondary)" stroke="var(--color-border-secondary)" stroke-width="1"/>
+
+  <!-- Transmitter (BS) -->
+  <line x1="38" y1="155" x2="38" y2="90" stroke="var(--color-border-primary)" stroke-width="1.5"/>
+  <line x1="30" y1="155" x2="46" y2="155" stroke="var(--color-border-primary)" stroke-width="1.5"/>
+  <line x1="33" y1="145" x2="43" y2="145" stroke="var(--color-border-primary)" stroke-width="1"/>
+  <line x1="27" y1="90" x2="49" y2="90" stroke="#185FA5" stroke-width="2"/>
+  <circle cx="38" cy="90" r="4" fill="#185FA5"/>
+  <text x="38" y="175" text-anchor="middle" font-size="9" fill="var(--color-text-tertiary)">BS</text>
+
+  <!-- Receiver (UE) -->
+  <rect x="442" y="108" width="16" height="24" rx="2" fill="var(--color-background-primary)" stroke="#185FA5" stroke-width="1.2"/>
+  <circle cx="450" cy="114" r="1.5" fill="#185FA5"/>
+  <line x1="450" y1="118" x2="450" y2="128" stroke="#185FA5" stroke-width="0.8"/>
+  <text x="450" y="145" text-anchor="middle" font-size="9" fill="var(--color-text-tertiary)">UE</text>
+
+  <!-- Path 1: Direct (line of sight, mostly blocked) -->
+  <line x1="42" y1="90" x2="442" y2="118" stroke="#378ADD" stroke-width="1" stroke-dasharray="5,3" opacity="0.3"/>
+  <text x="240" y="105" text-anchor="middle" font-size="9" fill="#378ADD" opacity="0.45">line of sight</text>
+
+  <!-- Path 2: Bounce off top-right building roof -->
+  <polyline points="42,90 350,22 445,112" fill="none" stroke="#1D9E75" stroke-width="1.5" opacity="0.75"/>
+  <circle cx="350" cy="22" r="3" fill="#1D9E75" opacity="0.75"/>
+  <line x1="442" y1="112" x2="452" y2="100" stroke="#1D9E75" stroke-width="1" opacity="0.6"/>
+
+  <!-- Path 3: Bounce off bottom building face -->
+  <polyline points="42,90 130,158 290,168 445,124" fill="none" stroke="#534AB7" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="130" cy="158" r="3" fill="#534AB7" opacity="0.7"/>
+  <circle cx="290" cy="168" r="3" fill="#534AB7" opacity="0.7"/>
+  <line x1="442" y1="124" x2="454" y2="128" stroke="#534AB7" stroke-width="1" opacity="0.6"/>
+
+  <!-- Path 4: High arc over buildings -->
+  <path d="M42,90 Q240,35 445,108" fill="none" stroke="#BA7517" stroke-width="1.5" opacity="0.65"/>
+  <line x1="442" y1="108" x2="455" y2="108" stroke="#BA7517" stroke-width="1" opacity="0.6"/>
+
+  <!-- Path labels -->
+  <text x="195" y="50" font-size="9" fill="#BA7517" opacity="0.8">path 3</text>
+  <text x="290" y="35" font-size="9" fill="#1D9E75" opacity="0.85">path 2</text>
+  <text x="168" y="185" font-size="9" fill="#534AB7" opacity="0.8">path 4 (multiple bounces)</text>
+
+  <!-- Delay annotation at receiver -->
+  <line x1="458" y1="100" x2="458" y2="130" stroke="var(--color-border-secondary)" stroke-width="0.5"/>
+  <line x1="455" y1="100" x2="461" y2="100" stroke="var(--color-border-secondary)" stroke-width="0.5"/>
+  <line x1="455" y1="130" x2="461" y2="130" stroke="var(--color-border-secondary)" stroke-width="0.5"/>
+  <text x="468" y="118" font-size="8" fill="var(--color-text-tertiary)" text-anchor="start">Δτ</text>
+
+</svg>
+<div class="fig-num">fig. 1</div>
+<div class="fig-caption">Multipath propagation. The same transmitted signal arrives via several distinct paths — each with a different delay, angle, and amplitude. Classical theory handles this by summing the contributions and invoking the central limit theorem.</div>
+</div>

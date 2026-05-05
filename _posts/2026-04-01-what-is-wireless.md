@@ -4,7 +4,6 @@ title: "What is the deal with 5G? Is it really faster?"
 date: 2026-04-01
 categories:
   - 5G
-  - 6G
 tags:
   - 5G
   - 6G

@@ -1,0 +1,95 @@
+<style>
+  .fig-wrap { padding: 8px 0 4px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .fig-caption { font-size: 12px; color: var(--color-text-secondary); text-align: center; line-height: 1.5; max-width: 440px; }
+  .fig-num { font-size: 11px; color: var(--color-text-tertiary); letter-spacing: 0.06em; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; width: 100%; max-width: 480px; }
+  .panel-label { font-size: 11px; color: var(--color-text-secondary); text-align: center; margin-top: 6px; }
+  .panel-sublabel { font-size: 10px; color: var(--color-text-tertiary); text-align: center; margin-top: 2px; }
+</style>
+
+<div class="fig-wrap">
+<div class="two-col">
+
+  <!-- Left: sub-6GHz — rich scattering, dense angular spread -->
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <svg width="200" height="200" viewBox="-100 -100 200 200">
+      <circle r="90" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.5"/>
+      <circle r="60" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.5"/>
+      <circle r="30" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.5"/>
+      <line x1="-90" y1="0" x2="90" y2="0" stroke="var(--color-border-tertiary)" stroke-width="0.4"/>
+      <line x1="0" y1="-90" x2="0" y2="90" stroke="var(--color-border-tertiary)" stroke-width="0.4"/>
+      <g opacity="0.55" fill="#378ADD">
+        <path d="M0,0 L-6,-82 L6,-82 Z" opacity="0.6"/>
+        <path d="M0,0 L-6,-82 L6,-82 Z" transform="rotate(22)" opacity="0.5"/>
+        <path d="M0,0 L-8,-70 L8,-70 Z" transform="rotate(45)" opacity="0.65"/>
+        <path d="M0,0 L-7,-58 L7,-58 Z" transform="rotate(68)" opacity="0.5"/>
+        <path d="M0,0 L-9,-75 L9,-75 Z" transform="rotate(90)" opacity="0.6"/>
+        <path d="M0,0 L-6,-50 L6,-50 Z" transform="rotate(112)" opacity="0.45"/>
+        <path d="M0,0 L-8,-65 L8,-65 Z" transform="rotate(135)" opacity="0.55"/>
+        <path d="M0,0 L-7,-48 L7,-48 Z" transform="rotate(158)" opacity="0.4"/>
+        <path d="M0,0 L-9,-78 L9,-78 Z" transform="rotate(180)" opacity="0.6"/>
+        <path d="M0,0 L-6,-55 L6,-55 Z" transform="rotate(202)" opacity="0.5"/>
+        <path d="M0,0 L-8,-70 L8,-70 Z" transform="rotate(225)" opacity="0.55"/>
+        <path d="M0,0 L-7,-42 L7,-42 Z" transform="rotate(248)" opacity="0.4"/>
+        <path d="M0,0 L-9,-80 L9,-80 Z" transform="rotate(270)" opacity="0.6"/>
+        <path d="M0,0 L-6,-52 L6,-52 Z" transform="rotate(292)" opacity="0.45"/>
+        <path d="M0,0 L-8,-68 L8,-68 Z" transform="rotate(315)" opacity="0.55"/>
+        <path d="M0,0 L-6,-45 L6,-45 Z" transform="rotate(338)" opacity="0.4"/>
+      </g>
+      <g fill="none" stroke="#185FA5" stroke-width="0.6" opacity="0.5">
+        <path d="M0,0 L-6,-82 L6,-82 Z"/>
+        <path d="M0,0 L-6,-82 L6,-82 Z" transform="rotate(22)"/>
+        <path d="M0,0 L-8,-70 L8,-70 Z" transform="rotate(45)"/>
+        <path d="M0,0 L-7,-58 L7,-58 Z" transform="rotate(68)"/>
+        <path d="M0,0 L-9,-75 L9,-75 Z" transform="rotate(90)"/>
+        <path d="M0,0 L-6,-50 L6,-50 Z" transform="rotate(112)"/>
+        <path d="M0,0 L-8,-65 L8,-65 Z" transform="rotate(135)"/>
+        <path d="M0,0 L-7,-48 L7,-48 Z" transform="rotate(158)"/>
+        <path d="M0,0 L-9,-78 L9,-78 Z" transform="rotate(180)"/>
+        <path d="M0,0 L-6,-55 L6,-55 Z" transform="rotate(202)"/>
+        <path d="M0,0 L-8,-70 L8,-70 Z" transform="rotate(225)"/>
+        <path d="M0,0 L-7,-42 L7,-42 Z" transform="rotate(248)"/>
+        <path d="M0,0 L-9,-80 L9,-80 Z" transform="rotate(270)"/>
+        <path d="M0,0 L-6,-52 L6,-52 Z" transform="rotate(292)"/>
+        <path d="M0,0 L-8,-68 L8,-68 Z" transform="rotate(315)"/>
+        <path d="M0,0 L-6,-45 L6,-45 Z" transform="rotate(338)"/>
+      </g>
+      <circle r="4" fill="#185FA5"/>
+    </svg>
+    <div class="panel-label">sub-6 GHz</div>
+    <div class="panel-sublabel">energy spread across many angles</div>
+  </div>
+
+  <!-- Right: mmWave — sparse, 2–3 dominant paths -->
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <svg width="200" height="200" viewBox="-100 -100 200 200">
+      <circle r="90" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.5"/>
+      <circle r="60" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.5"/>
+      <circle r="30" fill="none" stroke="var(--color-border-tertiary)" stroke-width="0.5"/>
+      <line x1="-90" y1="0" x2="90" y2="0" stroke="var(--color-border-tertiary)" stroke-width="0.4"/>
+      <line x1="0" y1="-90" x2="0" y2="90" stroke="var(--color-border-tertiary)" stroke-width="0.4"/>
+      <!-- Strong LoS -->
+      <path d="M0,0 L-9,-88 L9,-88 Z" fill="#1D9E75" opacity="0.65"/>
+      <path d="M0,0 L-9,-88 L9,-88 Z" fill="none" stroke="#0F6E56" stroke-width="1"/>
+      <!-- Reflected path -->
+      <path d="M0,0 L-7,-72 L7,-72 Z" transform="rotate(55)" fill="#1D9E75" opacity="0.5"/>
+      <path d="M0,0 L-7,-72 L7,-72 Z" transform="rotate(55)" fill="none" stroke="#0F6E56" stroke-width="1"/>
+      <!-- Weak secondary reflection -->
+      <path d="M0,0 L-5,-48 L5,-48 Z" transform="rotate(205)" fill="#1D9E75" opacity="0.35"/>
+      <path d="M0,0 L-5,-48 L5,-48 Z" transform="rotate(205)" fill="none" stroke="#0F6E56" stroke-width="0.7" stroke-dasharray="2,2"/>
+      <!-- Noise floor -->
+      <circle r="12" fill="none" stroke="#1D9E75" stroke-width="0.5" opacity="0.2"/>
+      <!-- Labels -->
+      <text x="0" y="-72" text-anchor="middle" font-size="8" fill="#085041">LoS</text>
+      <text x="62" y="-32" text-anchor="middle" font-size="8" fill="#085041">reflected</text>
+      <text x="-38" y="55" text-anchor="middle" font-size="8" fill="#085041" opacity="0.6">weak</text>
+      <circle r="4" fill="#0F6E56"/>
+    </svg>
+    <div class="panel-label">millimetre-wave</div>
+    <div class="panel-sublabel">2–3 dominant paths, rest near zero</div>
+  </div>
+
+</div>
+<div class="fig-num">fig. 2</div>
+<div class="fig-caption">Angular energy distribution at the receiver. At sub-6 GHz (left), rich scattering produces energy spread across many directions — the Gaussian approximation holds reasonably well. At millimetre-wave (right), aggressive attenuation leaves only a handful of dominant paths. The channel is sparse. A model that doesn't know this pays for it.</div>
+</div>

@@ -1,0 +1,58 @@
+<style>
+  .fig-wrap { padding: 8px 0 4px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .fig-caption { font-size: 12px; color: var(--color-text-secondary); text-align: center; line-height: 1.5; max-width: 480px; }
+  .fig-num { font-size: 11px; color: var(--color-text-tertiary); letter-spacing: 0.06em; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; width: 100%; max-width: 520px; }
+  .stack-title { font-size: 11px; color: var(--color-text-secondary); text-align: center; margin-bottom: 8px; letter-spacing: 0.04em; }
+  .layer { display: flex; align-items: center; justify-content: center; height: 36px; border-radius: 4px; font-size: 11px; text-align: center; line-height: 1.3; border: 0.5px solid; margin-bottom: 4px; padding: 0 8px; }
+  .arrow-down { text-align: center; font-size: 12px; color: var(--color-text-tertiary); line-height: 1; margin: 0 0 4px; }
+</style>
+
+<div class="fig-wrap">
+<div class="two-col">
+
+  <!-- Classical stack -->
+  <div>
+    <div class="stack-title">classical</div>
+    <div class="layer" style="background:var(--color-background-secondary);border-color:var(--color-border-tertiary);color:var(--color-text-secondary)">application</div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:var(--color-background-secondary);border-color:var(--color-border-tertiary);color:var(--color-text-secondary)">scheduler / MAC</div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:var(--color-background-secondary);border-color:var(--color-border-tertiary);color:var(--color-text-secondary)">link adaptation</div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:#E6F1FB;border-color:#B5D4F4;color:#185FA5">CSI feedback <span style="font-size:9px;color:#378ADD;margin-left:4px">codebook</span></div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:#E6F1FB;border-color:#B5D4F4;color:#185FA5">channel estimation <span style="font-size:9px;color:#378ADD;margin-left:4px">Gaussian prior</span></div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:var(--color-background-secondary);border-color:var(--color-border-tertiary);color:var(--color-text-secondary)">physical layer / RF</div>
+    <div style="margin-top:16px;border:0.5px dashed var(--color-border-secondary);border-radius:4px;padding:8px;text-align:center">
+      <div style="font-size:10px;color:var(--color-text-tertiary);margin-bottom:4px">AI add-on</div>
+      <div style="font-size:11px;color:var(--color-text-secondary)">traffic prediction<br>network optimisation</div>
+    </div>
+  </div>
+
+  <!-- AI-native stack -->
+  <div>
+    <div class="stack-title">AI-native</div>
+    <div class="layer" style="background:var(--color-background-secondary);border-color:var(--color-border-tertiary);color:var(--color-text-secondary)">application</div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:#EAF3DE;border-color:#C0DD97;color:#3B6D11">scheduler / MAC <span style="font-size:9px;color:#639922;margin-left:4px">learned</span></div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:#EAF3DE;border-color:#C0DD97;color:#3B6D11">link adaptation <span style="font-size:9px;color:#639922;margin-left:4px">learned</span></div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:#EAF3DE;border-color:#C0DD97;color:#3B6D11">CSI feedback <span style="font-size:9px;color:#639922;margin-left:4px">neural encoder</span></div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:#EAF3DE;border-color:#C0DD97;color:#3B6D11">channel estimation <span style="font-size:9px;color:#639922;margin-left:4px">data-driven prior</span></div>
+    <div class="arrow-down">↓</div>
+    <div class="layer" style="background:var(--color-background-secondary);border-color:var(--color-border-tertiary);color:var(--color-text-secondary)">physical layer / RF</div>
+    <div style="margin-top:16px;border:0.5px solid #C0DD97;border-radius:4px;padding:8px;text-align:center;background:#EAF3DE">
+      <div style="font-size:10px;color:#3B6D11;margin-bottom:2px">interface contracts</div>
+      <div style="font-size:10px;color:#639922">redesigned around<br>learned representations</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="fig-num">fig. 4</div>
+<div class="fig-caption">Classical vs AI-native stack. In the classical design (left), AI is bolted on above the stack — useful for network management but operating through interfaces built on Gaussian assumptions. In an AI-native design (right), learned components reach into channel estimation, CSI feedback, and link adaptation, and the interface contracts between layers are redesigned accordingly.</div>
+</div>
