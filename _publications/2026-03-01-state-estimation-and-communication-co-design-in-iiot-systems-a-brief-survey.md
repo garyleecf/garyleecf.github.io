@@ -1,0 +1,12 @@
+---
+title: 'State Estimation and Communication Co-Design in IIoT Systems: A Brief Survey'
+collection: publications
+category: manuscripts
+permalink: /publication/2026-03-01-state-estimation-and-communication-co-design-in-iiot-systems-a-brief-survey
+excerpt: 'Surveys joint state estimation and communication co-design for IIoT, from stability-theoretic foundations (data-rate theorem, critical loss rate) through layered network co-design to learning-based unified control frameworks, synthesizing how cross-layer optimization outperforms isolated subsystem approaches.'
+date: 2026-03-01
+venue: 'Journal of Communications and Information Networks'
+citation: “P. Li, S. Sun, G. C. F. Lee, C. Chen, S. Zhu, X. Guan, and G. P. Fettweis, \”State Estimation and Communication Co-Design in IIoT Systems: A Brief Survey,\” Journal of Communications and Information Networks, vol. 11, no. 1, pp. 1--21, Mar. 2026. doi: 10.23919/JCIN.2026.11474252”
+---
+
+The integration of wireless communication and state estimation has become a fundamental enabler for large-scale industrial Internet of things (IloT) systems, where estimation, transmission, and control are tightly coupled across heterogeneous networks. This survey provides an overview of recent advances in state estimation and communication co-design, highlighting the evolution from isolated subsystem optimization toward unified frameworks that jointly address estimation accuracy, communication efficiency, and scalability. We first review theoretical foundations that characterize how data rate and packet loss constrain estimation stability, introducing the key results such as data-rate theorem and critical loss rate for estimation convergence. Next, we discuss the scalability perspective, addressing the horizontal expansion through multihop relaying to overcome transmission distance limitations, and the vertical expansion through multi-sensor fusion to address the limited observation range of individual sensors. At the network level, we discuss layered design methodologies across the application, transport, medium access control (MAC), and physical layers to ensure estimation performance. Subsequently, we examine control-oriented co-design paradigms, including separation principle-based designs, joint optimization without separation, and learning-based frameworks that integrate estimation, communication, and control in a unified manner. Finally, we discuss several inspiring future research directions.
