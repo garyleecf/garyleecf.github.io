@@ -24,7 +24,7 @@ A radar and a base station look different from the outside. One is pointed at a 
 
 A radar works on a simple principle. You transmit a signal---one you designed and know exactly. That signal travels outward, hits an object, and some fraction of the energy reflects back. You receive the echo, compare it to what you originally sent, and from that comparison you can infer three things: how far away the object is (from the round-trip delay), how fast it is moving (from the Doppler frequency shift), and roughly what direction it came from (from the angle of arrival at your antenna array).
 
-The key is that reference. Because you know what you transmitted, any deviation in the echo is signal, not noise. The delay tells you range. The frequency shift tells you velocity. The angle tells you direction. Radar is, at its core, matched filtering applied to a known waveform.
+The key is that reference. Because you know what you transmitted, any deviation in the echo is signal, not noise. The delay tells you range. The frequency shift tells you velocity. The angle tells you direction. Radar is, at its core, *matched filtering* applied to a known waveform.
 
 <!-- IMAGE PROMPT for fig1-radar-principle.png | place file at /images/posts/isac/fig1-radar-principle.png
 
@@ -86,13 +86,13 @@ Taken together, these two arguments describe a scenario where ISAC is compelling
 
 ## But be careful about the hype
 
-It is worth being honest about what ISAC does not solve. Compared to a purpose-built radar system, an ISAC system will generally have worse sensing performance for a given hardware budget. The waveform is constrained. The antenna geometry is chosen for communications coverage, not radar cross-section optimization. Interference between the sensing and communications functions---particularly in multi-cell environments---is a real and open problem. And the privacy implications of pervasive, always-on environmental sensing embedded in the communications network are not trivial.
+Compared to a purpose-built radar system, an ISAC system will generally have worse sensing performance for a given hardware budget. The waveform is constrained. The antenna geometry is chosen for communications coverage, not radar cross-section optimization. Interference between the sensing and communications functions---particularly in multi-cell environments---is a real and open problem. And the privacy implications of pervasive, always-on environmental sensing embedded in the communications network are not trivial.
 
 There is also a more subtle issue. Some of the most cited ISAC use cases---high-accuracy localization, gesture recognition, indoor mapping---require sensing quality that an ISAC system may not reliably deliver, especially in loaded networks where comms traffic leaves little room for sensing. The cases where ISAC clearly wins are the ones where moderate sensing quality, deployed everywhere, beats excellent sensing quality deployed somewhere. Not every application fits that description.
 
 ---
 
-## There is a lot more to unpack
+## The engineering goes deeper than one post can cover
 
 This post has only sketched the shape of the argument. The actual engineering of an ISAC system---how you design waveforms that trade off comms and sensing performance, how you allocate resources between the two functions, how multiple ISAC nodes cooperate to form a distributed sensor array, what the fundamental limits look like---is a deep research area. So is the question of when ISAC's value proposition holds up under rigorous system-level analysis, and when a hybrid deployment of simpler dedicated sensors alongside the base station would just be more practical.
 

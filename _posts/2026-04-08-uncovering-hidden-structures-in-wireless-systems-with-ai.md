@@ -105,7 +105,7 @@ The performance difference between a uniform and an informed codebook is not sma
 
 ## Structure you can learn without being able to describe
 
-This is where sparse recovery and learned models come in, and where the argument connects back to the non-Gaussian point.
+Learned estimators sidestep the commitment that compressed sensing requires, and this is where the argument connects back to the non-Gaussian point.
 
 If you know the channel is sparse, you can exploit it directly. Compressed sensing algorithms---matching pursuit, LASSO---recover sparse signals from far fewer measurements than a Gaussian estimator would require. You don't need to probe every direction if you know most directions are empty. This idea has been influential in 5G channel estimation research [2].
 
@@ -121,7 +121,7 @@ The adapted codebook in fig. 3c is one illustration of the same principle. But t
 
 Here is the part that often gets skipped over, and it matters.
 
-The interface contracts between layers of the communications stack---what the physical layer measures and reports, what the UE feeds back to the base station, what the channel model looks like to the scheduler---were largely designed around the Gaussian assumption. Pilot structures, feedback codebook formats, link adaptation curves: most of it was dimensioned for a particular model of what channels look like.
+The interface contracts between layers of the communications stack were designed around the Gaussian assumption---what the physical layer measures and reports, what the UE feeds back to the base station, what the channel model looks like to the scheduler. Pilot structures, feedback codebook formats, link adaptation curves: most of it was dimensioned for a particular model of what channels look like.
 
 <!-- IMAGE PROMPT for fig4-stack.png | place file at /images/posts/ai-native-6g/fig4-stack.png
 
