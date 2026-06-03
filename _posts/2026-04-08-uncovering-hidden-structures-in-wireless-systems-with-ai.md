@@ -14,15 +14,11 @@ excerpt: "Wireless systems have been built on a Gaussian approximation for decad
 author_profile: true
 ---
 
-AI is everywhere right now. AI is pervasive, changing ways we do things in many places.
-Even in wireless communications, we are seeing various strategies and approaches to integrating AI.
-Recent efforts make a distinction between having AI introduced as an after thought to enhance/improve results, as opposed to "AI-Native", i.e., how to fundametnally change the ways we do things when we redesign certain things with AI.
+Last post, I described the six usage scenarios that define 6G — the three evolved service classes from 5G, and three genuinely new ones: **Integrated Sensing and Communication (ISAC)**, **AI and Communication**, and **Ubiquitous Connectivity**. This post is the first of three going deeper on each. I am starting with *AI and Communication*, partly because it sits closest to my own research, and partly because it is the scenario that most directly challenges how wireless systems have been built for the last several decades.
 
-What does this really mean? Where does that AI reside and what does it actually do? 
+The ITU's framing — *AI and Communication*, not "AI for communication" — is intentional. The proposition is not that AI will enhance a communication network from the outside. It is that AI becomes part of the design fabric of the network itself. What does that actually mean in practice?
 
-Rather than thinking of it as some chatGPT trying to explain parts of the network, AI in 6G presents opportuntiies that are more fundamental, and might also challenge the classical way we treat communications systems. The IMT-2030 framework — the ITU's blueprint for what 6G is supposed to be — includes a scenario called *AI and Communication*, in that AI becomes central and native to communication design. The phrasing is likely to be a conscious choice, and I hope to shine some light into where such opportunities could arise.
-
-The short version: some of the assumptions we built wireless systems on for the last several decades ought to be revisited. They are not necessarily wrong, but more like they might be simplifications or abstractions that we were comfortable. But to squeeze out more performance and to really reach the next level, we may want to address this "beast" hiding behind hidden structures. AI-native 6G is, in part, a proposal to stop living with it.
+The short version: some of the assumptions wireless systems were built on are worth revisiting. They are not wrong exactly — they are simplifications that kept the mathematics tractable, and they served the field well. But at millimetre-wave frequencies, where a significant share of 6G's performance ambitions live, those simplifications start to cost something real and measurable. AI-native design is, in part, a proposal to stop leaving that performance on the table.
 
 ---
 
@@ -30,11 +26,20 @@ The short version: some of the assumptions we built wireless systems on for the 
 
 When a signal travels through the air, it doesn't go point to point. It scatters — bounces off buildings, diffracts around corners, reflects off vehicles, gets absorbed by foliage. By the time it arrives at the receiver, it has come via dozens of paths, each at a slightly different angle, slightly different delay, slightly different amplitude.
 
-{% include posts/ai-native-6g/fig1_multipath.html %}
+<!-- IMAGE PROMPT for fig1-multipath.png — place file at /images/posts/ai-native-6g/fig1-multipath.png
+
+Tech blog illustration in wide landscape format (3:2 ratio, 1536x1024 px). Dark navy background (#0D1B2A). Flat vector art with subtle neon glow effects. Accent colors: electric blue (#00B4D8), bright cyan (#06FFE8).
+
+A wireless transmitter (small antenna tower icon, electric blue glow, left side) and a receiver (small smartphone icon, cyan glow, right side). Between them, multiple signal paths: one straight direct line-of-sight path in bright electric blue. Two or three reflected paths in cyan that curve and bounce off simple rectangular building silhouettes (thin white-line outlines, dark filled). One path visibly diffracts around a building corner as a gentle arc. Each path is a glowing arrow-tipped line. The paths arrive at the receiver from slightly different angles, suggesting the multipath effect. Faint dot-grid overlay on background. No text. 1536x1024 landscape.
+-->
+<figure style="margin: 1.8em 0 1.4em;">
+  <img src="/images/posts/ai-native-6g/fig1-multipath.png" alt="Diagram showing a wireless signal traveling from transmitter to receiver via multiple scattered paths, representing multipath propagation" style="max-width: 100%;"/>
+  <figcaption style="text-align: center; font-size: 0.82em; color: #7A6858; margin-top: 0.5em;">A signal traveling through a real environment does not take a single path. Scattering, reflection, and diffraction produce a superposition of many arrivals at the receiver.</figcaption>
+</figure>
 
 Characterising that precisely is, in general, very hard. So classical theory made a practical decision: if you have many independent random contributions summing together, invoke the central limit theorem, and the aggregate looks Gaussian. White noise. Rayleigh fading. A handful of parameters. Tractable mathematics.
 
-This is a genuinely impressive piece of reasoning, and it has been extraordinarily productive. Shannon capacity, optimal receiver design, error-correcting codes — a huge fraction of what we actually deploy runs on Gaussian foundations.
+This is a genuinely impressive piece of reasoning, and it has been extraordinarily productive. Shannon capacity, optimal receiver design, error-correcting codes — most of what we actually deploy runs on Gaussian foundations.
 
 But it is still an approximation. And as we push into millimetre-wave frequencies — where a lot of 6G's ambition for high-throughput links lives — that approximation starts to cost us something real.
 
@@ -46,7 +51,16 @@ Here is something that surprises people when they first encounter it. You might 
 
 At millimetre-wave, signals attenuate aggressively. Most of those scattered bounces just disappear. What you are left with is a small number of dominant propagation paths — a line-of-sight component if you are lucky, a strong reflection off a nearby surface, and then basically nothing. The channel is *sparse* in the angular domain. Energy arrives from a few directions, not all of them.
 
-{% include posts/ai-native-6g/fig2_sparse_channel.html %}
+<!-- IMAGE PROMPT for fig2-sparse-channel.png — place file at /images/posts/ai-native-6g/fig2-sparse-channel.png
+
+Tech blog illustration in wide landscape format (3:2 ratio, 1536x1024 px). Dark navy background (#0D1B2A). Flat vector art with subtle neon glow effects. Accent colors: electric blue (#00B4D8), bright cyan (#06FFE8).
+
+Two side-by-side top-down diagrams of a base station radiating signals, divided by a thin white vertical line. Left panel: many thin overlapping signal rays (15 to 20) radiating outward in nearly all directions from a central antenna icon, in muted cyan of roughly equal intensity — represents rich multipath at sub-6GHz. Right panel: only 2 to 3 prominent sharp directional beams radiating from the same antenna icon in bright electric blue with a glow effect; the majority of directions are empty and dark — represents a sparse mmWave channel. Faint dot-grid background. No text. 1536x1024 landscape.
+-->
+<figure style="margin: 1.8em 0 1.4em;">
+  <img src="/images/posts/ai-native-6g/fig2-sparse-channel.png" alt="Comparison of sub-6GHz rich multipath (many signal rays in all directions) versus mmWave sparse channel (2-3 dominant directional beams)" style="max-width: 100%;"/>
+  <figcaption style="text-align: center; font-size: 0.82em; color: #7A6858; margin-top: 0.5em;">At sub-6GHz frequencies, energy arrives from many directions simultaneously (left). At millimetre-wave, higher path loss strips away most reflections, leaving only a handful of dominant propagation paths (right).</figcaption>
+</figure>
 
 This is not a messier channel. It is, in a meaningful sense, a more structured one.
 
@@ -66,9 +80,26 @@ Now add the environment. Users are in buildings, on streets, in corridors. The g
 
 Fig. 3c is where it gets interesting. Same number of beams, but now shaped around where users can actually be. The inaccessible zones get nothing. The accessible ones get finer angular resolution, tighter beams, better spatial separation between users. The codebook has not grown; it has been *informed*.
 
-{% include posts/ai-native-6g/fig3_codebook.html %}
+<!-- IMAGE PROMPT for fig3-codebook.png — place file at /images/posts/ai-native-6g/fig3-codebook.png
 
-The performance difference between a uniform and an informed codebook is not a rounding error. In dense urban deployments it translates directly into how many users a cell can serve simultaneously. The question is how you get the informed version. You could derive it analytically if you have a sufficiently accurate model of the environment. But real environments are messy, partial, irregular — the clean analytical derivation gets complicated quickly. The increasingly practical answer is to learn it.
+Tech blog illustration in wide landscape format (3:2 ratio, 1536x1024 px). Dark navy background (#0D1B2A). Flat vector art with subtle neon glow effects. Accent colors: electric blue (#00B4D8), bright cyan (#06FFE8), amber (#FFB347).
+
+Three side-by-side top-down diagrams (3a, 3b, 3c), each showing a small base station icon at center with beam sectors radiating outward. Thin white vertical lines separate the three panels.
+
+Panel 3a (left): 12 uniform triangular beam sectors evenly distributed 360 degrees around the base station, all equal-width electric blue wedges — uniform codebook, no assumptions.
+
+Panel 3b (center): Same 12 beams as 3a. Three or four sectors are filled with a dark opaque overlay representing inaccessible zones blocked by solid dark rectangular building silhouettes around the perimeter. The blocked beam sectors are muted and dark; the accessible sectors are in cyan.
+
+Panel 3c (right): Beams redistributed. The inaccessible zones receive no beams. The accessible zones receive more beams with narrower, finer angular resolution wedges packed closely, in bright cyan with a glow, and amber highlights on the most prominent beams — an informed codebook shaped by real geometry.
+
+No text. 1536x1024 landscape.
+-->
+<figure style="margin: 1.8em 0 1.4em;">
+  <img src="/images/posts/ai-native-6g/fig3-codebook.png" alt="Three top-down beam codebook diagrams: (a) uniform beams in all directions, (b) same beams with inaccessible zones shown, (c) beams redistributed and concentrated in accessible directions" style="max-width: 100%;"/>
+  <figcaption style="text-align: center; font-size: 0.82em; color: #7A6858; margin-top: 0.5em;"><strong>Left:</strong> A uniform codebook makes no assumptions about the environment. <strong>Center:</strong> In practice, a portion of those beams point into regions no user can reach. <strong>Right:</strong> An informed codebook concentrates angular resolution where it is actually needed.</figcaption>
+</figure>
+
+The performance difference between a uniform and an informed codebook is not small. In dense urban deployments, it translates directly into how many users a cell can serve simultaneously — the kind of gain that shows up in system-level throughput, not just in link-level simulations [3]. The question is how you get the informed version. You could derive it analytically if you have a sufficiently accurate model of the environment. But real environments are messy, partial, and irregular — the clean analytical derivation gets complicated quickly. The increasingly practical answer is to learn it.
 
 ---
 
@@ -76,7 +107,7 @@ The performance difference between a uniform and an informed codebook is not a r
 
 This is where sparse recovery and learned models come in, and where the argument connects back to the non-Gaussian point.
 
-If you know the channel is sparse, you can exploit it directly. Compressed sensing algorithms — matching pursuit, LASSO — recover sparse signals from far fewer measurements than a Gaussian estimator would require. You don't need to probe every direction if you know most directions are empty. This idea has been influential in 5G channel estimation research.
+If you know the channel is sparse, you can exploit it directly. Compressed sensing algorithms — matching pursuit, LASSO — recover sparse signals from far fewer measurements than a Gaussian estimator would require. You don't need to probe every direction if you know most directions are empty. This idea has been influential in 5G channel estimation research [2].
 
 But compressed sensing requires you to specify the sparsity structure: which basis the channel is sparse in, how sparse, what the noise model looks like. Get those wrong and the gains evaporate. Real millimetre-wave channels are sparse in ways that are approximately but not exactly what a textbook model says — the support varies with environment, there are correlations across antenna arrays that the standard basis ignores.
 
@@ -90,9 +121,22 @@ The adapted codebook in fig. 3c is one illustration of the same principle. But t
 
 Here is the part that often gets skipped over, and it matters.
 
-The interface contracts between layers of the communications stack — what the physical layer measures and reports, what the UE feeds back to the base station, what the channel model looks like to the scheduler — were all designed around the Gaussian assumption. Pilot structures, feedback codebook formats, link adaptation curves: all of it was dimensioned for a particular model of what channels look like.
+The interface contracts between layers of the communications stack — what the physical layer measures and reports, what the UE feeds back to the base station, what the channel model looks like to the scheduler — were largely designed around the Gaussian assumption. Pilot structures, feedback codebook formats, link adaptation curves: most of it was dimensioned for a particular model of what channels look like.
 
-{% include posts/ai-native-6g/fig4_stack.html %}
+<!-- IMAGE PROMPT for fig4-stack.png — place file at /images/posts/ai-native-6g/fig4-stack.png
+
+Tech blog illustration in wide landscape format (3:2 ratio, 1536x1024 px). Dark navy background (#0D1B2A). Flat vector art with subtle neon glow effects. Accent colors: electric blue (#00B4D8), bright cyan (#06FFE8), amber (#FFB347).
+
+Center of image: a vertical protocol stack — 5 horizontal rounded-rectangle layers stacked from bottom to top. Each layer has a short bold white sans-serif label centered inside it. From bottom to top the labels read: "PHY", "MAC", "RLC", "PDCP", "Application". The bottom two layers (PHY and MAC) have a warm amber glow around their borders and a slightly brighter interior, indicating where classical Gaussian assumptions are embedded. The top three layers are in muted dark slate with minimal glow and their labels in lighter gray.
+
+On the left side of the stack, a thin amber vertical bracket spans the PHY and MAC layers with a small bold white label beside it reading "How to go beyond Gaussian assumptions". On the right side, thin bright cyan arrows point inward toward the PHY and MAC layers with a glow effect, with a small bold white label reading "AI-native redesign". Thin white connecting arrows between adjacent layers on the right edge of the stack show internal interfaces.
+
+Clean, symmetric, legible text. Faint dot-grid background. 1536x1024 landscape.
+-->
+<figure style="margin: 1.8em 0 1.4em;">
+  <img src="/images/posts/ai-native-6g/fig4-stack.png" alt="Communications protocol stack diagram with the physical and MAC layers highlighted as the location of Gaussian assumptions, and AI-native redesign indicated at those layers" style="max-width: 100%;"/>
+  <figcaption style="text-align: center; font-size: 0.82em; color: #7A6858; margin-top: 0.5em;">The classical Gaussian assumption is baked into the lower layers of the stack — pilot structures, feedback formats, link adaptation curves. An AI-native system redesigns those interfaces, not just the algorithms running above them.</figcaption>
+</figure>
 
 If you swap in a better estimator but leave those interfaces unchanged, you recover some performance. But you are still operating through specifications built for a different world. An AI-native system is one where those interface contracts are redesigned from the ground up around the assumption that learned representations will be doing the heavy lifting. Change the estimator *and* the contract, and the gains compound.
 
@@ -112,7 +156,7 @@ That is the AI-native proposition. Not AI as a layer on top of a classical syste
 
 ---
 
-*Next in the series: we get specific — **channel estimation with neural networks**, what it actually looks like in practice, and how learned estimators compare to classical baselines like MMSE.*
+*Next in the series: the other two new 6G scenarios — what it means for a network to also be a sensor (**ISAC**), and how 6G plans to extend coverage to places a cell tower was never economical to build (**Ubiquitous Connectivity**).*
 
 ---
 

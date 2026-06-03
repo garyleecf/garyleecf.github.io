@@ -4,6 +4,7 @@ archive/
 .sass-cache/
 *archive*
 prompts
+.claude
 
 # Ignore the directory for local files during development
 local/
