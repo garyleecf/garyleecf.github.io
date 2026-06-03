@@ -14,7 +14,7 @@ excerpt: "Wireless systems have been built on a Gaussian approximation for decad
 author_profile: true
 ---
 
-Last post, I described the six usage scenarios that define 6G---the three evolved service classes from 5G, and three genuinely new ones: **Integrated Sensing and Communication (ISAC)**, **AI and Communication**, and **Ubiquitous Connectivity**. This post is the first of three going deeper on each. I am starting with *AI and Communication*, partly because it sits closest to my own research, and partly because it is the scenario that most directly challenges how wireless systems have been built for the last several decades.
+Last post, I described the six usage scenarios that define 6G---the three evolved service classes from 5G, and three new ones: **Integrated Sensing and Communication (ISAC)**, **AI and Communication**, and **Ubiquitous Connectivity**. This post is the first of three going deeper on each. I am starting with *AI and Communication*, partly because it sits closest to my own research, and partly because it is the scenario that most directly challenges how wireless systems have been built for the last several decades.
 
 The ITU's framing---*AI and Communication*, not "AI for communication"---is intentional. The proposition is not that AI will enhance a communication network from the outside. It is that AI becomes part of the design fabric of the network itself. What does that actually mean in practice?
 
@@ -39,7 +39,7 @@ A wireless transmitter (small antenna tower icon, electric blue glow, left side)
 
 Characterising that precisely is, in general, very hard. So classical theory made a practical decision: if you have many independent random contributions summing together, invoke the central limit theorem, and the aggregate looks Gaussian. White noise. Rayleigh fading. A handful of parameters. Tractable mathematics.
 
-This is a genuinely impressive piece of reasoning, and it has been extraordinarily productive. Shannon capacity, optimal receiver design, error-correcting codes---most of what we actually deploy runs on Gaussian foundations.
+This is an impressive piece of reasoning, and it has been extraordinarily productive. Shannon capacity, optimal receiver design, error-correcting codes---most of what we actually deploy runs on Gaussian foundations.
 
 But it is still an approximation. And as we push into millimetre-wave frequencies---where a lot of 6G's ambition for high-throughput links lives---that approximation starts to cost us something real.
 
@@ -148,7 +148,7 @@ This is the architectural claim in IMT-2030's *AI and Communication* scenario. T
 
 The practical consequence is a network that adapts to its actual environment rather than a textbook approximation of it.
 
-Conventional systems are designed to worst-case specifications---dimensioned for a channel that could be anywhere in the space the Gaussian model defines. A system that has learned the real distribution of channels in its deployment can afford to be more aggressive: finer codebooks, more targeted estimation, beam management tuned to local geometry. In dense urban millimetre-wave deployments, where the channel is genuinely sparse and structured, the gap between *designed-for-the-model* and *designed-for-the-reality* is large and exploitable.
+Conventional systems are designed to worst-case specifications---dimensioned for a channel that could be anywhere in the space the Gaussian model defines. A system that has learned the real distribution of channels in its deployment can afford to be more aggressive: finer codebooks, more targeted estimation, beam management tuned to local geometry. In dense urban millimetre-wave deployments, where the channel is sparse and structured, the gap between *designed-for-the-model* and *designed-for-the-reality* is large and exploitable.
 
 The deeper point is about information. Real channels carry more structure than Gaussian models capture. A system built to learn and exploit that structure gets more performance from the same spectrum and hardware---not because it is more powerful, but because it has stopped making assumptions that were never quite true.
 

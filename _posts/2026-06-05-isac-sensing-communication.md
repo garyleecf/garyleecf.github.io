@@ -14,7 +14,7 @@ excerpt: "A 6G base station and a radar have more in common than it might seem. 
 author_profile: true
 ---
 
-This is the second post in a three-part series on 6G's genuinely new scenarios. The [first post]({% post_url 2026-04-08-uncovering-hidden-structures-in-wireless-systems-with-ai %}) covered *AI and Communication*. This one is about **Integrated Sensing and Communication (ISAC)**. The third will cover Ubiquitous Connectivity (focusing on Non-Terrestrial Networks).
+This is the second post in a three-part series on 6G's new scenarios. The [first post]({% post_url 2026-04-08-uncovering-hidden-structures-in-wireless-systems-with-ai %}) covered *AI and Communication*. This one is about **Integrated Sensing and Communication (ISAC)**. The third will cover Ubiquitous Connectivity (focusing on Non-Terrestrial Networks).
 
 ---
 
@@ -94,7 +94,7 @@ There is also a more subtle issue. Some of the most cited ISAC use cases---high-
 
 ## There is a lot more to unpack
 
-This post has only sketched the shape of the argument. The actual engineering of an ISAC system---how you design waveforms that trade off comms and sensing performance, how you allocate resources between the two functions, how multiple ISAC nodes cooperate to form a distributed sensor array, what the fundamental limits look like---is a genuinely deep research area. So is the question of when ISAC's value proposition holds up under rigorous system-level analysis, and when a hybrid deployment of simpler dedicated sensors alongside the base station would just be more practical.
+This post has only sketched the shape of the argument. The actual engineering of an ISAC system---how you design waveforms that trade off comms and sensing performance, how you allocate resources between the two functions, how multiple ISAC nodes cooperate to form a distributed sensor array, what the fundamental limits look like---is a deep research area. So is the question of when ISAC's value proposition holds up under rigorous system-level analysis, and when a hybrid deployment of simpler dedicated sensors alongside the base station would just be more practical.
 
 A proper treatment of ISAC's strengths, weaknesses, open research directions, and realistic deployment scenarios deserves its own post---one that goes further into the technical mechanics rather than staying at the conceptual level.
 
