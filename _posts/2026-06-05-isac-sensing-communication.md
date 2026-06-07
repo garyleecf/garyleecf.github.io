@@ -22,7 +22,7 @@ A radar and a base station look different from the outside. One is pointed at a 
 
 ## What a radar actually does
 
-A radar works on a simple principle. You transmit a signal---one you designed and know exactly. That signal travels outward, hits an object, and some fraction of the energy reflects back. You receive the echo, compare it to what you originally sent, and from that comparison you can infer three things: how far away the object is (from the round-trip delay), how fast it is moving (from the Doppler frequency shift), and roughly what direction it came from (from the angle of arrival at your antenna array).
+A radar works on a simple principle: you transmit a signal (one you designed and know exactly), and that signal travels outward, hits an object, and some fraction of the energy reflects back. You receive the echo, compare it to what you originally sent, and from that comparison you can infer three things: how far away the object is (from the round-trip delay), how fast it is moving (from the Doppler frequency shift), and roughly what direction it came from (from the angle of arrival at your antenna array).
 
 The key is that reference. Because you know what you transmitted, any deviation in the echo is signal, not noise. The delay tells you range. The frequency shift tells you velocity. The angle tells you direction. Radar is, at its core, *matched filtering* applied to a known waveform.
 
