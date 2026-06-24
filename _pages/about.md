@@ -16,7 +16,7 @@ A recurring theme in my research is turning measurements and domain structure in
 <!-- <img src="/images/research-overview.svg" alt="Research overview: methods and domains in AI for Wireless Communications" style="max-width:100%; margin: 1.5em 0 0.5em;"/> -->
 <img src="/images/research-overview.png" alt="Research overview: methods and domains in AI for Wireless Communications" style="max-width:100%; margin: 1.5em 0 0.5em;"/>
 
-<div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0.5em 0 1.5em;">
+<div style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 0.5em 0 1.5em;">
   <img src="/images/research-signal-separation.png" alt="Signal Separation &amp; Interference Mitigation" style="width:100%; border-radius:10px;"/>
   <img src="/images/research-generative-models.png" alt="Score-based &amp; Generative Models for RF" style="width:100%; border-radius:10px;"/>
   <img src="/images/research-reinforcement-learning.png" alt="Reinforcement Learning &amp; Optimisation" style="width:100%; border-radius:10px;"/>
